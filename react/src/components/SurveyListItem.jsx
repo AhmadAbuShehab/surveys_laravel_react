@@ -1,9 +1,15 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { TrashIcon } from "@heroicons/react/24/solid";
 import { Pen, PencilIcon } from "lucide-react";
-import { TButton } from "./core/TButton";
+import TButton from '/src/components/core/TButton.jsx';
+
 
 
 export default function SurveyListItem({survey, onDeleteClick}) {
+
+  function onDeleteClick(surveyId){
+    console.log("Delete survey with ID:", surveyId);
+  }
     return(
            <div className="flex flex-col py-4 px-6 shadow-md bg-white hover:bg-gray-50 h-[470px]">
       <img
