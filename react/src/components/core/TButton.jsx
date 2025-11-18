@@ -13,11 +13,12 @@ export  default function TButton({
 }) {
     let classes = [
         "flex",
+        "items-center",
         "whitespace-nowrap",
         "text-sm",
         "border",
+        "border-2",
         "border-transparent",
-        "border-2"
     ];
 
     if (link){
