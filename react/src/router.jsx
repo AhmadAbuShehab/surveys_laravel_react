@@ -6,6 +6,7 @@ import Signup from "./views/Signup.jsx";
 import GuestLayout from "./components/GuestLayout.jsx";
 import DefaultLayout from "./components/DefaultLayout.jsx";
 import { Navigate } from "react-router-dom";
+import SurveyView from "./views/SurveyView.jsx";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         {
             path: 'survays',
             element: <Survays />
+        },
+        {
+            path: 'survays/create',
+            element: <SurveyView />
         }
     ]
   },
